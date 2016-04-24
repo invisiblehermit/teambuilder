@@ -1,0 +1,99 @@
+body{ 
+    background: #051D1E!important;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+
+
+
+#search_box{
+	min-height:10%;
+}
+
+/*list item*/
+
+
+.list-group{
+	/*margin-top: 5%;*/
+    height: 90%;
+	min-height:90%;
+	border-radius:0;
+	bottom: 0;
+	border: none;
+    border-top: solid 1px #2c3433;
+}
+
+
+.list-group-item{
+    border: none;
+    border-bottom: solid 2px #2c3433;
+    border-top: solid 1px black;
+    color: #feeedf;
+    padding: 20px;
+    height: 60px;
+	min-height:20%;
+    background-color:#001e21;
+    line-height: 20px;
+
+	
+}
+
+.list-group-item:first-child{
+    border-radius: 0;
+    border-top: none;
+}
+
+.list-group-item:last-child{
+    border-radius: 0;
+}
+
+.list-group-submenu{
+	float: right;
+	list-style-type: none;
+}
+
+.list-group-submenu li{
+	float: left;
+}
+
+
+.glyphicon{
+	padding: 0 10px;
+}
+
+
+.player_postion,
+.player_number{
+    width: 30px;
+    height: 30px;
+    margin-top:-5px; 
+    padding-top: 4px;
+    padding-left: 7px;
+    border-radius: 999px;
+    font-size: 12px;
+   
+}
+
+.player_name{
+    width: 50%;
+    margin-left: 20px;
+    float: left;
+}
+
+.player_postion{
+    float: left;
+    background-color: #369c4e;
+}
+
+
+.player_number{
+    float: right;
+    background-color: white;
+}
+
+.cp_player{
+    background-color: #B22D2C;
+}

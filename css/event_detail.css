@@ -1,0 +1,104 @@
+body{ 
+    background: #051D1E!important;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+
+/*list item*/
+
+
+#team_profile{
+	color: #feeedf;
+}
+
+.team_logo{
+	padding: 10px;
+    width: 120px;
+    margin: 10px 0 0 20px;
+    float: left;
+}
+
+.team_logo img{
+    width: 100%;
+}
+
+.team_name{
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.team_star{
+    float: left;
+  	margin-left: 70px;
+    line-height: 0;
+}
+
+
+.team_status{
+   float: left;
+   margin-left: 70px;
+   padding: 10px 0;
+   font-size: .8em;
+}
+
+.team_status span{
+    font-size: 14px;
+    color: #7D8742;
+}
+
+.team_star .glyphicon {
+	font-size: .9em;
+    padding: 0;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    padding-left: 0;
+    float: left;
+}
+
+
+.team_info{
+	display: block;
+	width: 100%;
+	height: 150px;
+	border-bottom: solid 1px #2c3433;
+}
+
+
+.team_content{
+	border-top: solid 1px black;
+	padding: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+
+.event_title{
+	font-size: 1.2em;
+    color: #7D8742;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.join_event{
+	position: absolute;
+	bottom: 10%;
+	left: 40%;
+	
+    padding: 10px 20px;
+ 
+}
+
+
+
+
+

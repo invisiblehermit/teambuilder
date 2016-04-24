@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TEAM BUILDER</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.2.0.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.2.0.css">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" type="text/css" href="css/team.css">
+    <link rel="stylesheet" type="text/css" href="css/field_maps.css">
+    <link rel="stylesheet" type="text/css" href="css/page_transition.css">
+
+ 
+
+</head>
+
+<body>
+ <div id="wrapper">
+        <div class="pusher">
+
+        <div id="mid_cover"></div>
+
+        <div id="ttt_selection">
+
+            <div class="ttt_header">
+                <p>Invite Player</p>
+            </div>
+
+           
+
+            <div class="invite_email"><input type="email" class="button-input" id="email" placeholder="email" data-empty=""></div>               
+                
+          
+
+            <div id="ttt_btn">
+              <button class="glyphicon glyphicon-plus btn_invite"></button>
+              <button class="glyphicon glyphicon-remove btn_cancel"></button>
+              <button class="glyphicon glyphicon-ok"></button>
+            </div>
+            
+        </div>
+
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            
+                <div class="navbar-header">
+                   <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                    <svg width="1000px" height="1000px">
+                      <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                      <path id="pathB" d="M 300 500 L 700 500"></path>
+                      <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                  </div><!-- menu-icon-wrapper -->
+                    <div id="dummy" class="dummy">
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                    </div><!-- /dummy -->
+                    <div id="nav_title">VALENCIA</div>
+                    <button class="dropDown_btn glyphicon glyphicon-plus pull-right" type="button">
+                    </button>
+                </div>
+           
+        </nav>
+
+         <div class="separator"></div>
+
+
+        <div id="sidebar-wrapper">
+            <ul>
+                <li>
+                    <a id="current_user" href="#"></a>
+                    <i class="logout-col logout-col-down glyphicon glyphicon-arrow-down"></i>
+                </li>
+                <li id="log_out">
+                    <a href="index.html">log out</a>
+                    <i class="logout-col logout-col-up glyphicon glyphicon-arrow-up"></i>
+                </li>
+                <li>
+                    <a href="player_profile.html">PROFILE</a>
+                </li>
+                <li>
+                    <a class="active" href="team.html">TEAM</a>
+                </li>
+                <li>
+                    <a href="events.html">GAMES</a>
+                </li>
+                <li>
+                    <a href="#">SETTINGS</a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <!-- Page Content -->
+    <div class="page_content">
+
+        <div id="sub_nav">
+               
+            <ul>
+                <li class="team_btn active">team</li>
+                <li class="player_btn">player</li>
+                <li class="tactics_btn">tactics</li>
+            </ul>
+
+        </div>
+
+        <div class="separator"></div>
+
+           <ul id="team_profile" class="list-group">
+
+
+                <li class="list-group-item">
+                    
+                    
+                    <div class="team_logo"><img src="img/team_logo/03.png" alt=""></div>
+                    <div class="team_name" id="team_name">Valencia</div>
+                    <div class="team_rate">
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                      </div>
+                    
+
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    
+                    <div>members : </div>
+                    <div id="member_num">25</div>
+
+                </li>
+
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    
+                    <div>captain : </div>
+                    <div id="cpt_name">Jake Mc Dorman</div>
+
+                </li>
+                
+
+                <div class="separator"></div>
+
+
+                
+                  <button type="button" class="upcoming_games_btn full-length-btn">Upcoming Games</button>
+                
+
+
+            </ul>
+            <!-- /end of list group -->
+
+            <div id="upcoming_games" class="list-group">
+
+                <table class="upcoming_game">
+                    <tr class="upcoming_games_titles"><td colspan="2"><p>upcoming game</p></td></tr>
+                    <tr>
+                        <td><span>date: </span>Dec 05th</td>
+                        <td><span>location: </span>Kezar Stadium</td>
+                    </tr>
+
+                    <tr class="sec_row">
+                        <td><span>time: </span>01:00PM-3:00PM</td>
+                        <td><span>opponent : </span>Hotspur</td>
+                    </tr>
+                </table>
+                
+                <div class="separator"></div>
+
+                <table>
+                    <tr class="upcoming_games_titles games_history"><td colspan="2"><p>recent games history</p></td></tr>
+                    <tr>
+                        <td><span>date: </span>Dec 05th</td>
+                        <td><span>location: </span>Kezar Stadium</td>
+                    </tr>
+
+                    <tr class="sec_row">
+                        <td><span>time: </span>01:00PM-3:00PM</td>
+                        <td><span>opponent : </span>Hotspur</td>
+                    </tr>
+                </table>
+
+                <div class="separator"></div>
+
+                <table>
+                    <tr class="td_padding">
+                        <td><span>date: </span>Dec 05th</td>
+                        <td><span>location: </span>Kezar Stadium</td>
+                    </tr>
+
+                    <tr class="sec_row">
+                        <td><span>time: </span>01:00PM-3:00PM</td>
+                        <td><span>opponent : </span>Hotspur</td>
+                    </tr>
+                </table>
+
+                <div class="separator"></div>
+                
+                <div class="back_to_team_info">brief info</div>
+
+            </div>
+                
+            <ul id="player_list" class="list-group">
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/01.jpg"></div>
+                    <div class="player_number">05</div>
+                    <div class="player_name">Jake Mc Dorman</div>
+                    <div class="player_postion">GK</div>
+                    
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/03.jpg"></div>
+                    <div class="player_number">07</div>
+                    <div class="player_name">Peter Parker</div>
+                    <div class="player_postion">MF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/02.jpg"></div>
+                    <div class="player_number">09</div>
+                    <div class="player_name">Stirling Mortlock</div>
+                    <div class="player_postion">SMF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/04.jpg"></div>
+                    <div class="player_number">11</div>
+                    <div class="player_name">Roy Hinkley</div>
+                    <div class="player_postion">SMF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/06.jpg"></div>
+                    <div class="player_number">13</div>
+                    <div class="player_name">Mike Smith</div>
+                    <div class="player_postion">SWF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/07.jpg"></div>
+                    <div class="player_number">15</div>
+                    <div class="player_name">Ted Shackleford</div>
+                    <div class="player_postion">CB</div>                    
+                </li>
+
+                <div class="separator"></div>
+
+
+                <!-- <li class="list-group-item">
+                    <div class="player_postion"></div>
+                    <div class="player_name">Ted Shackleford</div>
+                    <div class="player_postion"></div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_postion"></div>
+                    <div class="player_name">Ted Shackleford</div>
+                    <div class="player_postion"></div>                    
+                </li>
+
+                <div class="separator"></div> -->
+
+            </ul>
+            <!-- /end of list group -->
+
+
+            <div id="tactics_list" class="list-group tactics_list">
+
+                <div class="field_col item" tactics-data="t442">
+                    <ul class="c01">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c02">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c03">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c04">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c05">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+                </div>               
+    
+                <div class="field_col item" tactics-data="t451">
+                    <ul class="c01">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c02">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c03">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c04">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c05">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+                </div>               
+        
+                <div class="field_col item" tactics-data="t433">
+                    <ul class="c01">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c02">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c03">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c04">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c05">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+                </div>
+
+                <div class="field_col item" tactics-data="t424">
+                    <ul class="c01">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c02">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c03">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c04">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c05">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+                </div>
+
+                <div class="field_col item" tactics-data="t415">
+                    <ul class="c01">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c02">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c03">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c04">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+
+                    <ul class="c05">
+                        <li class="row01"></li>
+                        <li class="row02"></li>
+                        <li class="row03"></li>
+                        <li class="row04"></li>
+                        <li class="row05"></li>
+                        <li class="row06"></li>
+                        <li class="row07"></li>
+                        <li class="row08"></li>
+                        <li class="row09"></li>
+                        <li class="row10"></li>
+                        <li class="row11"></li>
+                        <li class="row12"></li>
+                        <li class="row13"></li>
+                        <li class="row14"></li>
+                        <li class="row15"></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+
+            <div class="apply_tactics">
+              <button type="button" class="button-style-2 button-style-s">apply</button>
+            </div>
+        
+
+    </div>
+    <!-- /.container -->
+    </div>
+        <!-- /.pusher -->
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <script src="js/segment.min.js"></script>
+
+    <script src="js/ease.min.js"></script>
+
+    <script src="http://www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+
+    <script src="js/login.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/owl.carousel.2.0.min.js"></script>
+
+    <script src="js/fieldMap.js"></script>
+
+    <script src="js/team.js"></script>
+
+
+</body>
+
+</html>

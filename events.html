@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TEAM BUILDER</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" type="text/css" href="css/events.css">
+    <link rel="stylesheet" type="text/css" href="css/page_transition.css">
+
+ 
+
+</head>
+
+<body>
+ <div id="wrapper">
+        <div class="pusher">
+
+        <div id="mid_cover"></div>
+
+        <div id="ttt_selection">
+
+            <div class="ttt_header">
+                <p>Would you like to join the game as </p>
+                <div class="player_position position-style-1">GK</div>
+            </div>
+        
+        <div id="ttt_btn">
+          <button class="glyphicon glyphicon-remove btn_cancel"></button>
+          <button class="glyphicon glyphicon-ok"></button>
+        </div>
+            
+            
+        </div>
+
+
+
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse" role="navigation">
+           
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                   <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                    <svg width="1000px" height="1000px">
+                      <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                      <path id="pathB" d="M 300 500 L 700 500"></path>
+                      <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                  </div><!-- menu-icon-wrapper -->
+                    <div id="dummy" class="dummy">
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                    </div><!-- /dummy -->
+                    <div id="nav_title">GAMES</div>
+                    <button class="dropDown_btn glyphicon glyphicon-plus pull-right" type="button"></button>
+                </div>
+        
+           
+        </nav>
+
+        <div class="separator"></div>
+
+
+        <div id="sidebar-wrapper">
+            <ul>
+                <li>
+                    <a id="current_user" href="#"></a>
+                    <i class="logout-col logout-col-down glyphicon glyphicon-arrow-down"></i>
+                </li>
+                <li id="log_out">
+                    <a href="index.html">log out</a>
+                    <i class="logout-col logout-col-up glyphicon glyphicon-arrow-up"></i>
+                </li>
+                <li>
+                    <a href="player_profile.html">PROFILE</a>
+                </li>
+                <li>
+                    <a href="team.html">TEAM</a>
+                </li>
+                <li>
+                    <a class="active" href="events.html">GAMES</a>
+                </li>
+                <li>
+                    <a href="#">SETTINGS</a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <!-- Page Content -->
+    <div class="page_content">
+
+        <div id="dropDown_bar">
+
+                <div class="input-group col-md-12">
+                    <input type="text" id="new_team" class="form-control input-lg" placeholder="Create Your Team" >
+                        <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="teamConfirm_btn glyphicon glyphicon-ok"></i>
+                        </button>
+                        </span>
+                </div>
+
+            </div>
+           
+
+           <div id="sub_nav">
+               
+                <ul>
+                    <li class="findGames_btn active">find a game</li>
+                    <li class="quickMatch_btn">quick match</li>
+                    <li class="myGames_btn">my games</li>
+                </ul>
+
+           </div>
+
+           <div class="separator"></div>
+
+<!--date picker section-->
+           <div id="date_picker">
+            
+           </div>
+
+           <div class="separator"></div>
+
+		   <div id="game_list">
+
+        <!--the first event-->
+            <ul class="list-group item">
+
+
+               <li class="list-group-item">
+
+               <div class="game_time">
+                 <button type="button" id="game_time_btn" class="glyphicon glyphicon-time"></button>
+                 <p>10:00AM-12:00AM</p>
+                 <!-- <select id="game_time_picker">
+                 </select> -->
+               </div>
+
+               <div class="game_location">
+               <button type="button" id="game_location_btn" class="glyphicon glyphicon-th"></button>
+               <p>Kezar Stadium</p>
+               </div>
+
+                 
+               </li>
+              
+               <li class="list-group-item team-event-a">
+                 <div class="team-event">
+                  <div class="team_avatar_a"><img src="img/team_logo/01.png" alt=""></div>
+
+                  <div class="team_game_info team_game_info_a">
+                    <div class="team_name">Valencia</div>
+                      <div class="player_require">4 spots</div>
+                      <div class="team_rate">
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                      </div>
+                  </div>
+
+                  <div class="game_btn_group">
+                    <button type="button" class="button-style button-style-1">more info</button>
+                    <button type="button" class="button-style button-style-2" id="join_btn">join</button>
+                    
+                  </div>
+                 </div>
+               </li>
+
+               <!-- <div id="vs_section">
+                 <div class="game_type"></div><div class="vs">VS</div><div class="game_type"></div>
+               </div> -->
+
+               <li class="list-group-item team-event-b">
+                  <div class="team-event">
+                  <div class="team_avatar_b"><img src="img/team_logo/06.png" alt=""></div>
+
+                  <div class="team_game_info team_game_info_b">
+                    <div class="team_name">Peninsulaf</div>
+                      <div class="player_require">3 spots</div>
+                      <div class="team_rate">
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                      </div>
+                  </div>
+
+                  <div class="game_btn_group">
+                    <a href="event_detail.html"><button type="button" class="button-style button-style-1">more info</button></a>
+                    <button type="button" class="button-style button-style-2">join</button>
+                  </div>
+                 </div>
+               </li>
+               
+              <!--  <div class="switch_games">
+              <button type="button" id="next_game_btn" class="glyphicon glyphicon-triangle-bottom"></button>
+               </div> -->
+               
+            </ul>
+
+            <!--the second event-->
+	        	<ul class="list-group item">
+
+
+	             <li class="list-group-item">
+
+	             <div class="game_time">
+	               <button type="button" id="game_time_btn" class="glyphicon glyphicon-time"></button>
+	               <p>02:00PM-04:00PM</p>
+	               <!-- <select id="game_time_picker">
+	               </select> -->
+	             </div>
+
+	             <div class="game_location">
+	             <button type="button" id="game_location_btn" class="glyphicon glyphicon-th"></button>
+	             <p>Kezar Stadium</p>
+	             </div>
+
+	               
+	             </li>
+	          	
+	             <li class="list-group-item team-event-a">
+		             <div class="team-event">
+		             	<div class="team_avatar_a"><img src="img/team_logo/03.png" alt=""></div>
+
+		             	<div class="team_game_info team_game_info_a">
+		             		<div class="team_name">Hotspur</div>
+			               	<div class="player_require">6 spots</div>
+			               	<div class="team_rate">
+		                      <div class="glyphicon glyphicon-star"></div>
+		                      <div class="glyphicon glyphicon-star"></div>
+		                      <div class="glyphicon glyphicon-star"></div>
+		                  </div>
+		             	</div>
+
+		             	<div class="game_btn_group">
+			             	<button type="button" class="button-style button-style-1">more info</button>
+		             		<button type="button" class="button-style button-style-2" id="join_btn">join</button>
+		             		
+		             	</div>
+		             </div>
+	             </li>
+
+	             <!-- <div id="vs_section">
+	               <div class="game_type"></div><div class="vs">VS</div><div class="game_type"></div>
+	             </div> -->
+
+	             <li class="list-group-item team-event-b">
+		              <div class="team-event">
+		             	<div class="team_avatar_b"><img src="img/team_logo/04.png" alt=""></div>
+
+		             	<div class="team_game_info team_game_info_b">
+		             		<div class="team_name">Inferno</div>
+			               	<div class="player_require">3 spots</div>
+			               	<div class="team_rate">
+		                      <div class="glyphicon glyphicon-star"></div>
+		                      <div class="glyphicon glyphicon-star"></div>
+		                      <div class="glyphicon glyphicon-star"></div>
+		                  </div>
+		             	</div>
+
+		             	<div class="game_btn_group">
+			             	<a href="event_detail.html"><button type="button" class="button-style button-style-1">more info</button></a>
+		             		<button type="button" class="button-style button-style-2">join</button>
+		             	</div>
+		             </div>
+	             </li>
+	             
+	            <!--  <div class="switch_games">
+	          	<button type="button" id="next_game_btn" class="glyphicon glyphicon-triangle-bottom"></button>
+	             </div> -->
+	             
+	          </ul>
+
+
+             <!--the thirds event-->
+            <ul class="list-group item">
+
+
+               <li class="list-group-item">
+
+               <div class="game_time">
+                 <button type="button" id="game_time_btn" class="glyphicon glyphicon-time"></button>
+                 <p>11:00AM-02:00PM</p>
+                 <!-- <select id="game_time_picker">
+                 </select> -->
+               </div>
+
+               <div class="game_location">
+               <button type="button" id="game_location_btn" class="glyphicon glyphicon-th"></button>
+               <p>Kezar Stadium</p>
+               </div>
+
+                 
+               </li>
+              
+               <li class="list-group-item team-event-a">
+                 <div class="team-event">
+                  <div class="team_avatar_a"><img src="img/team_logo/05.png" alt=""></div>
+
+                  <div class="team_game_info team_game_info_a">
+                    <div class="team_name">Comets</div>
+                      <div class="player_require">2 spots</div>
+                      <div class="team_rate">
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                      </div>
+                  </div>
+
+                  <div class="game_btn_group">
+                    <button type="button" class="button-style button-style-1">more info</button>
+                    <button type="button" class="button-style button-style-2" id="join_btn">join</button>
+                    
+                  </div>
+                 </div>
+               </li>
+
+               <!-- <div id="vs_section">
+                 <div class="game_type"></div><div class="vs">VS</div><div class="game_type"></div>
+               </div> -->
+
+               <li class="list-group-item team-event-b">
+                  <div class="team-event">
+                  <div class="team_avatar_b"><img src="img/team_logo/02.png" alt=""></div>
+
+                  <div class="team_game_info team_game_info_b">
+                    <div class="team_name">Manchester</div>
+                      <div class="player_require">1 spots</div>
+                      <div class="team_rate">
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                          <div class="glyphicon glyphicon-star"></div>
+                      </div>
+                  </div>
+
+                  <div class="game_btn_group">
+                    <a href="event_detail.html"><button type="button" class="button-style button-style-1">more info</button></a>
+                    <button type="button" class="button-style button-style-2">join</button>
+                  </div>
+                 </div>
+               </li>
+               
+              <!--  <div class="switch_games">
+              <button type="button" id="next_game_btn" class="glyphicon glyphicon-triangle-bottom"></button>
+               </div> -->
+               
+            </ul>
+              
+              
+
+
+            </div><!--end of game list-->
+            
+            
+<!--quick match section-->
+
+        <ul id="quick_match" class="list-group">
+            
+
+            <li class="sub-title">
+            <p>Pick Your Time</p>
+            </li>
+
+            <li class="qm_time_selection">
+            <button type="button" class="button-style-s">morning</button>
+            <button type="button" class="button-style-s">afternoon</button>
+            <button type="button" class="button-style-s">night</button>
+            </li>
+
+
+            <li class="sub-title">
+            <p>Pick Where</p>
+            </li>
+            
+
+            <li class="button_selection qm_location_selection">
+              <select>
+                <option value="">the closest stadium</option>
+                <option value="keza_stadium">Kezar Stadium</option>
+                <option value="negoesco_stadium">Negoesco Stadium</option>
+                <option value="att_park">AT&T Park</option>
+              </select>
+            </li>
+
+
+            <li class="sub-title">
+            <p>Pick Your Position</p>
+            </li>
+            
+            <li class="position_selection">
+              <button type="button" class="player_position position-style-2">GK</button>
+              <button type="button" class="player_position position-style-2">T2</button>
+              <button type="button" class="player_position position-style-2">ANY</button>
+            </li>
+
+            
+            <button type="button" class="start_match full-length-btn">Start Match</button>
+           
+
+        </ul>
+
+
+        <!--add match section-->
+
+        <!-- <ul id="add_game" class="list-group">
+            
+
+            <div class="quickMatch_picker">
+            <button type="button" id="game_time_btn" class="glyphicon glyphicon-time"></button>
+            <p>PICK YOUR TIME</p>
+            </div>
+
+           
+
+
+            <div class="quickMatch_picker">
+            <button type="button" id="game_time_btn" class="glyphicon glyphicon-th"></button>
+            <p>PICK WHERE</p>
+            </div>
+            
+
+            <div class="qm_location_selection">
+              <select>
+                <option value="">the closest stadium</option>
+                <option value="keza_stadium">Kezar Stadium</option>
+                <option value="negoesco_stadium">Negoesco Stadium</option>
+                <option value="att_park">AT&T Park</option>
+              </select>
+            </div>
+
+
+            <div class="qm_time_selection">
+            <button type="button" class="button-style-s button-style-1">7v7</button>
+            <button type="button" class="button-style-s button-style-1">9v9</button>
+            <button type="button" class="button-style-s button-style-1">11v11</button>
+            </div>
+
+
+            <div class="start_match">
+              <button type="button" class="full-length-btn">SECHEDULE GAME</button>
+            </div>
+
+        </ul> -->
+
+
+
+    <!--myEvent section-->
+        
+        <ul id="myEvent_list" class="list-group">
+
+
+                <li class="list-group-item">
+
+                    <div class="team_info_title">
+                        
+                        <div class="mg_time"><span>time: </span>01:00PM - 3:00PM</div>
+                        <div class="mg_position"><span>position: </span>GK</div>                       
+
+                    </div>
+                    
+                    <div class="team_info_title">
+                        <div class="mg_location"><span>location: </span>Kazar Stadium</div>
+                        <div class="mg_team"><span>team : </span>Hotspur</div> 
+                    </div>
+                </li>
+
+        <div class="separator"></div>
+
+        </ul>
+      
+
+        <!--myEvent section-->
+        
+        <ul id="qm_results" class="list-group">
+
+            <li class="list-group-item">
+              
+              <div class="qm_btn">
+              <button class="glyphicon glyphicon-refresh"></button>
+              <button class="glyphicon glyphicon-remove"></button>              
+              </div>
+
+              <div class="qm_title"><p>Found A Match !</p></div>
+
+              <div class="game_time">
+              <button type="button" id="game_time_btn" class="glyphicon glyphicon-time"></button>
+              <p>10:00AM-12:00AM</p>
+              </div>
+
+             <div class="game_location">
+             <button type="button" id="game_location_btn" class="glyphicon glyphicon-th"></button>
+             <p>Kezar Stadium</p>
+             </div>
+             
+             <div class="qm_player_position">
+               <div>Play As</div>
+               <button class="player_position position-style-1">GK</button>
+             </div>
+            
+            <div class="qm_team">
+              <div class="qm_team_avatar"><img src="img/team_logo/01.png" alt=""></div>
+
+              <div class="team_game_info team_game_info_a">
+                <div class="team_name">Valencia</div>
+                  <div class="player_require">4 spots</div>
+                  <div class="team_rate">
+                      <div class="glyphicon glyphicon-star"></div>
+                      <div class="glyphicon glyphicon-star"></div>
+                      <div class="glyphicon glyphicon-star"></div>
+                  </div>
+              </div>
+
+            </div>
+
+            </li>
+
+        </ul>
+
+
+    </div>
+    <!-- /.container -->
+    </div>
+        <!-- /.pusher -->
+    </div>
+    <!-- /.wrapper -->
+
+  <!-- jQuery Version 1.11.1 -->
+  <script src="js/jquery.js"></script>    
+
+  <script src="js/date.js"></script>   
+
+  <script src="js/handlebars-v4.0.5.js"></script>    
+
+  <script src="js/segment.min.js"></script>
+
+  <script src="js/ease.min.js"></script>
+
+  <script src="http://www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+
+  <script src="js/login.js"></script>
+
+  <script src="js/menu.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/event.js"></script>
+
+
+</body>
+
+</html>

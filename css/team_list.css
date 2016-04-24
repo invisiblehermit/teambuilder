@@ -1,0 +1,159 @@
+body{ 
+    background: #051D1E!important;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+
+
+#search_box{
+	min-height:10%;
+}
+
+/*list item*/
+
+
+.list-group{
+	/*margin-top: 5%;*/
+    height: 90%;
+	min-height:90%;
+	border-radius:0;
+	bottom: 0;
+	border: none;
+    border-top: solid 1px #2c3433;
+}
+
+
+.list-group-item{
+    border: none;
+    border-bottom: solid 2px #2c3433;
+    border-top: solid 1px black;
+    color: #feeedf;
+    padding: 20px;
+    height: 86px;
+	min-height:20%;
+    background-color:transparent;
+    line-height: 43px;
+
+	
+}
+
+.list-group-item:first-child{
+    border-radius: 0;
+    border-top: none;
+}
+
+.list-group-item:last-child{
+    border-radius: 0;
+}
+
+.list-group-submenu{
+	float: right;
+	list-style-type: none;
+}
+
+.list-group-submenu li{
+	float: left;
+}
+
+
+.glyphicon{
+	padding: 0 10px;
+}
+
+
+.teamConfirm_btn{
+    color: red!important;
+}
+
+
+
+
+/* mid cover layer*/
+
+#mid_cover{
+    top:0;
+    position: absolute;
+    background-color: rgba(115,165,104,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: none;
+
+}
+
+
+/*ttt_selection */
+
+#ttt_selection{
+    background-color: #040B0A;
+    top:10%;
+    left: 15%;
+    width: 70%;
+    position: absolute;
+    z-index: 51;
+    display: none;
+    border: solid 1px #A09FA0;
+}
+
+
+.ttt_header button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    padding:15px;
+    color: white;
+    margin-top: -40px;
+}
+
+.ttt_header p{
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.team_to_apply{
+    margin-top: none;
+    list-style-type: none;
+    -webkit-padding-start: 0;
+   
+}
+
+.team_to_apply li{
+    font-size: .9em;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: solid 1px #A09FA0;
+}
+
+
+.team_to_apply li:last-child{
+    border-bottom:none;
+}
+
+/* apply to team li click effect----------------------*/
+
+.team_to_apply_actived::before {
+    margin-right: 10px;
+    content: '>';
+    color:white!important;
+}
+
+.team_to_apply_actived::after {
+    margin-left: 10px;
+    content: '<';
+    color:white!important;
+}
+
+.team_to_apply_actived{
+    color:#b5d776!important;
+}
+
+

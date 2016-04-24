@@ -1,0 +1,208 @@
+body{ 
+    background: #051D1E!important;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+img[src=""] {
+   display: none;
+}
+
+.list-group{
+	border-radius:0;
+	bottom: 0;
+	border: none;
+}
+
+
+.list-group-item{
+    border: none;
+    height:100px;
+    padding: 25px;
+	min-height:20%;
+    line-height: 20px;
+
+	
+}
+
+.list-group-item:first-child{
+    height:270px;
+    border-radius: 0;
+    border-top: none;
+}
+
+.list-group-item:last-child{
+    border-radius: 0;
+    border-bottom: none;
+}
+
+
+
+.glyphicon{
+	padding: 0 10px;
+
+}
+
+.first_name,
+.last_name{
+    font-size: 18px;
+}
+
+.player_picture{
+    margin: 5px auto;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 200px;
+    overflow: hidden;
+    /*border: solid 2px #dddfd7;*/
+    box-shadow: 0px 9px 4px -5px rgba(0,0,0,0.38);
+    background-color: #373E34;
+
+}
+
+.player_picture img{
+    width: 100%;
+}
+
+
+.player_name{
+    width: 50%;
+    text-align: center;
+    margin: 15px auto 0 auto;    
+}
+
+.player_info_title{
+    text-transform: capitalize;
+    width: 40%;
+    float: left;
+    margin: 10px 0;
+}
+
+
+.player_info_content{
+    width: 40%;
+    float: right;
+}
+
+#player_rate{
+    height: 50px;
+}
+
+.player_info_title{
+    margin-top: 10px;
+}
+
+#player_rate .player_info_content{
+    margin-top: -10px;
+}
+.player_star{
+    width: 60%;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    line-height: 0;
+
+}
+
+.player_star .glyphicon {
+    font-size: 10px;
+    padding: 0;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+
+
+.player_postion{
+    text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    border: solid 1px #dddfd7;
+    font-size: 12px;
+    float: left;
+    padding-top: 12.5px;
+    text-align: center;
+    background-color: #959c3f;
+    margin-right: 15px;
+   
+}
+
+
+.team_logo{
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    background-image: url(../img/team_logo/01.png);
+    background-size: 100% 100%;
+   
+}
+
+.player_number{
+   font-size: 14px;
+}
+
+.contact_info_group{
+    float: left;
+    width: 60%;
+}
+
+.contact_info_text{
+    float: left;
+    font-size: 12px;
+}
+
+
+
+
+.user_edit li{
+    padding-top: 30px;
+}
+
+.player_avatar{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    margin: 30px auto 0 auto;
+    background-color: #373E34;
+    overflow: hidden;
+}
+
+.player_avatar p{
+    margin-top: 10px;
+    color: #051D1E;
+}
+
+#profile-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+}
+/*edit-info part*/
+
+#input-file{
+    display: none;
+}
+
+.select_position{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+#select_position_01,
+#select_position_02{
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+   
+}
+               

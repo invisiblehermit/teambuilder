@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TEAM BUILDER</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" type="text/css" href="css/team.css">
+    <link rel="stylesheet" type="text/css" href="css/page_transition.css">
+
+ 
+
+</head>
+
+<body>
+ <div id="wrapper">
+        <div class="pusher">
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            
+                <div class="navbar-header">
+                   <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                    <svg width="1000px" height="1000px">
+                      <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                      <path id="pathB" d="M 300 500 L 700 500"></path>
+                      <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                  </div><!-- menu-icon-wrapper -->
+                    <div id="dummy" class="dummy">
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                    </div><!-- /dummy -->
+                    <div id="nav_title">TEAM</div>
+                    <button class="dropDown_btn glyphicon glyphicon-plus pull-right" type="button">
+                    </button>
+                </div>
+           
+        </nav>
+
+        <div class="separator"></div>
+
+
+        <div id="sidebar-wrapper">
+            <ul>
+                <li>
+                    <a id="current_user" href="#"></a>
+                    <i class="logout-col logout-col-down glyphicon glyphicon-arrow-down"></i>
+                </li>
+                <li id="log_out">
+                    <a href="index.html">log out</a>
+                    <i class="logout-col logout-col-up glyphicon glyphicon-arrow-up"></i>
+                </li>
+                <li>
+                    <a href="player_profile.html">PROFILE</a>
+                </li>
+                <li>
+                    <a class="active" href="team.html">TEAM</a>
+                </li>
+                <li>
+                    <a href="events.html">GAMES</a>
+                </li>
+                <li>
+                    <a href="#">SETTINGS</a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <!-- Page Content -->
+    <div class="page_content">
+
+        <div id="dropDown_bar">
+
+                <div class="input-group col-md-12">
+                    <input type="text" id="new_team" class="form-control input-lg" placeholder="Create Your Team" >
+                        <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="teamConfirm_btn glyphicon glyphicon-ok"></i>
+                        </button>
+                        </span>
+                </div>
+
+            </div>
+           
+                
+            <ul id="team_list" class="list-group">
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/team_logo/01.png"></div>
+                    <div class="player_number">05</div>
+                    <div class="player_name">Jake Mc Dorman</div>
+                    <div class="player_postion">GK</div>
+                    
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/team_logo/02.png"></div>
+                    <div class="player_number">07</div>
+                    <div class="player_name">Peter Parker</div>
+                    <div class="player_postion">MF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/team_logo/03.png"></div>
+                    <div class="player_number">09</div>
+                    <div class="player_name">Stirling Mortlock</div>
+                    <div class="player_postion">SMF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/team_logo/04.png"></div>
+                    <div class="player_number">11</div>
+                    <div class="player_name">Roy Hinkley</div>
+                    <div class="player_postion">SMF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/06.jpg"></div>
+                    <div class="player_number">13</div>
+                    <div class="player_name">Mike Smith</div>
+                    <div class="player_postion">SWF</div>
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                    <div class="player_avatar"><img src="img/player_avatar/01.jpg"></div>
+                    <div class="player_number">15</div>
+                    <div class="player_name">Ted Shackleford</div>
+                    <div class="player_postion">CB</div>                    
+                </li>
+
+                <div class="separator"></div>
+
+                
+
+            </ul>
+            <!-- /end of list group -->
+        
+
+    </div>
+    <!-- /.container -->
+    </div>
+        <!-- /.pusher -->
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/segment.min.js"></script>
+
+    <script src="js/ease.min.js"></script>
+
+    <script src="http://www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+
+    <script src="js/login.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/owl.carousel.2.0.min.js"></script>
+
+    <script src="js/fieldMap.js"></script>
+
+    <script src="js/team.js"></script>
+
+
+</body>
+
+</html>

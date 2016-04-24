@@ -1,0 +1,271 @@
+body{ 
+    background: #051D1E!important;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+
+
+
+#search_box{
+	min-height:10%;
+}
+
+/*list item*/
+
+
+.list-group{
+	border-radius:0;
+	border: none;
+}
+
+
+.list-group-item{
+    border: none;
+    color: #feeedf;
+    padding: 20px;
+    height: 60px;
+    line-height: 20px;
+
+	
+}
+
+#team_profile .list-group-item div{
+    width: 50%;
+    text-transform: capitalize;
+    float: left;
+}
+
+
+#team_profile .list-group-item:first-child{
+    border-radius: 0;
+    border-top: none;
+}
+
+
+#team_profile .list-group-item:first-child div{
+    float: none;
+}
+
+
+
+
+.list-group-item:last-child{
+    border-radius: 0;
+}
+
+.list-group-submenu{
+	float: right;
+	list-style-type: none;
+}
+
+.list-group-submenu li{
+	float: left;
+}
+
+
+.glyphicon{
+	padding: 0 10px;
+}
+
+.player_avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    overflow: hidden;
+    float: left;
+}
+
+.player_avatar img{
+    width: 100%;
+}
+
+.player_postion{
+  margin-top: -15px;
+   /* margin-right: 15px;*/
+   
+}
+
+.player_name,
+.player_number{
+    width: 50%;
+    margin-left: 20px;
+    float: left;
+}
+
+.player_number{
+    margin-top: 7px;
+}
+
+#player_list .list-group-item{
+    height: 105px;    
+}
+
+#team_list .list-group-item{
+    height: 115px;
+}
+
+
+
+
+/*team info section*/
+#team_profile .list-group-item:first-child{
+    height: 280px;
+}
+
+#team_profile .list-group-item div.team_logo{
+    width: 120px;
+    margin: 30px auto 0 auto;
+}
+
+.team_logo img{
+    width: 100%;
+}
+
+.team_name{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#team_profile .list-group-item div.team_rate{
+    padding: 0;
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#team_profile .list-group-item div.team_rate .glyphicon{
+    width: auto;
+    padding: 3px;
+    font-size: 12px;
+
+}
+
+.upcoming_games{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*upcoming games section*/
+
+
+table{
+    font-size: 12px;
+    width: 100%;
+}
+
+
+#upcoming_games td{
+    text-align: left;
+    padding-left: 20px;
+    /*padding-bottom: 7px;*/
+}
+
+table span {
+    color: #959c3f;
+}
+
+tbody{
+    padding: 20px;
+}
+
+.sec_row td{
+    padding-bottom: 30px;
+}
+
+.td_padding td{
+    padding-top: 30px;
+}
+
+.upcoming_game{
+    background: url(../img/bgnoise_lg.png) #353142;
+    background-blend-mode: multiply;
+}    
+
+.games_history p{
+    color: #959c3f;
+}
+.upcoming_games_titles p{
+    text-align: center;
+    text-transform: capitalize;
+    margin-left:-20px;
+}
+
+.upcoming_games_titles td{
+    text-align: center;
+    padding-left:0;
+    padding-top: 20px;
+}
+
+.back_to_team_info{
+    color: #959c3f;
+    position: absolute;
+    right: 25%;
+    bottom: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.invite_email{
+    text-align: center;
+}
+
+.invite_email p{
+    margin-top: 20px;
+    color: orange;
+}
+
+
+.apply_tactics{
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+#tactics_list{
+    width:100%;
+   /* background-image: url(../img/fieldbg.png);
+    background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    /*background-position: 300px 50px; */
+    overflow: hidden;
+    display: none;
+}
+
+#team_profile{
+   height: 527px;
+   /*height: calc(100%-100px);*/
+}
+
+#player_list{
+    display: none;
+}
+
+
+#upcoming_games{
+    display: none;
+}
+
+#tactics_list,
+#player_list,
+#team_profile{
+  -webkit-animation: animationFromRight .6s cubic-bezier(0.7,0,0.3,1) both;
+  animation: animationFromRight .6s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+#upcoming_games{
+  height: 527px;
+  -webkit-animation: animationFromBottom .6s cubic-bezier(0.7,0,0.3,1) both;
+  animation: animationFromBottom .6s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+

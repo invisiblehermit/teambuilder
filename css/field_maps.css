@@ -1,0 +1,107 @@
+body{
+	background: #051D1E!important;
+}
+
+#field_map{
+	width: 100%;
+	height: 100%;
+	
+}
+
+#tactics_change{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.field_col{
+	background:url(../img/play-field.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0 20px;
+	width: 220px;
+	/*height: 335px;*/
+	margin: 50px auto 15px auto;
+	/*float: left;*/
+}
+
+.field_col ul{
+	width: 20%;
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	float: left;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.field_col li{
+	width: 100%;
+	height: 22.333px;
+	opacity: 0;
+
+}
+
+.field_col button{
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.tactics_list .owl-item{
+	opacity: .5;
+}
+
+.tactics_list .owl-item .field_col{
+	margin-top: 60px;
+	height: 300px
+}
+
+.tactics_list .owl-item.active.center{
+	opacity: 1;
+}
+
+.tactics_list .owl-item.active.center .field_col{
+	margin-top: 45px;
+	height: 335px;
+}
+
+/*.c01 .row11,
+.c02 .row12,
+.c04 .row12,
+.c05 .row11{
+	background-color: blue;
+}
+
+
+.c01 .row05,
+.c02 .row07,
+.c04 .row07,
+.c05 .row05{
+	background-color: yellow;
+}
+
+.c02 .row02,
+.c04 .row02{
+	background-color: red;
+}
+*/
+.row09,
+.row10,
+.row11,
+.row12{
+	background-color: blue;
+}
+
+.row05,
+.row06,
+.row07,
+.row08{
+	background-color: yellow;
+}
+
+.row01,
+.row02,
+.row03{
+	background-color: red;
+}
+

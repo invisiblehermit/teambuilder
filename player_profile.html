@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TEAM BUILDER</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" type="text/css" href="css/player_profile.css">
+    <link rel="stylesheet" type="text/css" href="css/page_transition.css">
+
+
+ 
+
+</head>
+
+<body>
+ <div id="wrapper">
+        <div class="pusher">
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                   <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                    <svg width="1000px" height="1000px">
+                      <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                      <path id="pathB" d="M 300 500 L 700 500"></path>
+                      <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                  </div><!-- menu-icon-wrapper -->
+                    <div id="dummy" class="dummy">
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                      <div class="dummy__item"></div>
+                    </div><!-- /dummy -->
+                    <div id="nav_title">PROFILE</div>
+                    <a href="edit_player.html"><button class="dropDown_btn glyphicon glyphicon-pencil pull-right" type="button"></button></a>
+                </div>
+           
+        </nav>
+        
+        <div class="separator"></div>
+
+        <div id="sidebar-wrapper">
+            <ul>
+                <li>
+                    <a id="current_user" href="#"></a>
+                    <i class="logout-col logout-col-down glyphicon glyphicon-arrow-down"></i>
+                </li>
+                <li id="log_out">
+                    <a href="index.html">log out</a>
+                    <i class="logout-col logout-col-up glyphicon glyphicon-arrow-up"></i>
+                </li>
+                <li>
+                    <a class="active" href="player_profile.html">PROFILE</a>
+                </li>
+                <li>
+                    <a href="team.html">TEAM</a>
+                </li>
+                <li>
+                    <a href="events.html">GAMES</a>
+                </li>
+                <li>
+                    <a href="#">SETTINGS</a>
+                </li>
+            </ul>
+        </div>
+    <!-- Page Content -->
+           
+                
+            <ul id="player_profile" class="list-group">
+
+
+                <li class="list-group-item">
+                    
+                    <div class="player_picture"></div>
+                    
+                    <div class="player_name">
+                        <div class="first_name"></div>
+                        <div class="last_name"></div>
+                    </div>
+
+                    <div class="player_star">
+                        <div class="glyphicon glyphicon-star"></div>
+                        <div class="glyphicon glyphicon-star"></div>
+                        <div class="glyphicon glyphicon-star"></div>
+                        <div class="glyphicon glyphicon-star"></div>
+                        <div class="glyphicon glyphicon-star"></div>
+                    </div>
+                   
+                
+
+                </li>
+
+                <div class="separator"></div>
+
+                
+
+
+                <li class="list-group-item">
+                    
+                    <div class="player_info_title">position</div>
+
+                    <div class="player_info_content">
+                        
+                        <div class="player_postion position01"></div>
+                        <div class="player_postion position02"></div>
+
+                    </div>
+                    
+
+                </li>
+
+                <div class="separator"></div>
+
+
+                <li class="list-group-item">
+                   
+                    <div class="player_info_title">team</div>
+
+                    <div class="player_info_content">
+
+                        <div class="team_logo"></div>
+                        <div class="player_postion player_number"></div>
+
+                    </div>
+                    
+                </li>
+
+                <div class="separator"></div>
+                
+
+                <li class="list-group-item">
+                   
+                    <div class="player_info_title">contact</div>
+
+                    <div class="contact_info_group">
+                        <div class="contact_info_text email"><div class="icon-secondary glyphicon glyphicon-envelope"></div><span></span></div>
+                        <div class="contact_info_text phone"><div class="icon-secondary glyphicon glyphicon-phone-alt"></div><span></span></div>
+                    </div>
+                    
+                </li>
+
+            </ul>
+            <!-- /end of list group -->
+        
+
+    </div>
+    <!-- /.container -->
+    </div>
+        <!-- /.pusher -->
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <script src="http://www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+
+    <script src="js/login.js"></script>
+
+    <script src="js/player_profile.js"></script>
+
+    <script src="js/segment.min.js"></script>
+
+    <script src="js/ease.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/menu.js"></script>
+
+    
+
+
+
+
+
+</body>
+
+</html>
